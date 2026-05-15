@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
-    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    <title>Palíndromo</title>
 </head>
-<body>
-    
+
+<body class="min-h-screen flex items-center justify-center bg-slate-100 p-4">
+
+    <div class="w-full max-w-md bg-white rounded-3xl shadow-xl p-6 space-y-6">
+
+        <h1 class="text-xl font-bold text-center">Palíndromo</h1>
+
+        <input id="frase" type="text" class="w-full p-4 border rounded-xl" placeholder="Ej: yo dono rosas oro no doy" />
+
+        <button onclick="verificarPalindromo()" class="w-full bg-blue-500 text-white p-4 rounded-xl">
+            Verificar
+        </button>
+
+        <div id="resultado" class="text-center font-semibold p-4 rounded-xl"></div>
+
+    </div>
     <script src="app.js"></script>
 </body>
+
 </html>
